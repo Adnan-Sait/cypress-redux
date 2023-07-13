@@ -1,0 +1,86 @@
+:root {
+  --app-color-surface-primary: #0d3b66;
+  --app-color-surface-secondary: #f4d35e;
+  --app-color-surface-tertiary: #faf0ca;
+
+  --app-color-surface-secondary-tint-3: #f7e08e;
+
+  --app-color-surface-secondary-shade-1: #dcbe55;
+  --app-color-surface-secondary-shade-3: #ab9442;
+  --app-color-shadow-primary: #0d3b66;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--app-color-surface-tertiary);
+  font-family: sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.app-header {
+  padding: 20px;
+  width: 100%;
+  background-color: var(--app-color-surface-primary);
+  text-align: left;
+}
+
+.app-home-link:link,
+.app-home-link:visited {
+  color: var(--app-color-surface-tertiary);
+}
+
+.app-home-link:hover {
+  text-decoration: none;
+}
+
+.app-card-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.app-card {
+  padding: 20px 60px;
+  background-color: var(--app-color-surface-secondary);
+  border-radius: 20px;
+  color: var(--app-color-surface-primary);
+  box-shadow: 0 0 1px 3px rgba(13, 59, 102, 0.1);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.app-card:hover {
+  background-color: var(--app-color-surface-secondary-shade-1);
+}
+
+.app-card-count {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.app-card-label {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.app-breadcrumb {
+  display: flex;
+  gap: 5px;
+  padding: 20px;
+}
+
+.app-details {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
